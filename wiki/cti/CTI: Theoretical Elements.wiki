@@ -1,0 +1,56 @@
+= CTI: Theoretical Elements =
+
+> How can we put in place effective countermeasures if we don´t know which approaches and techniques the attacker will use? 
+
+This problem can be addressed by using cyber threat intelligence. The Threat Intelligence process goal is to profile the adversary by making use of information that can be gathered from previous attacks, public and private repositories. 
+
+== Information == 
+
+The intelligence process is the foundation of the CTI process, the very basic component of an intelligence process is the _information_. By the American Heritage Dictionary of the English Language, Information can be defined as
+
+> Any fact or set of facts, knowledge, news, or advice, whether communicated by others or obtained by personal study and investigation; any datum that reduces uncertainty about the state of any part of the world; intelligence; knowledge derived from reading, observation, or instruction.
+
+In the cyber domain the information that we can collect comes from different sources, such as malware, monitoring tools, application logs, application servers, Operating System, and VPNs; information can be collected from external sources like public or private repositories or can be bought.
+
+This huge set of heterogeneous information can be:
+
+- Loosely structured, or
+- strictly structured.
+- Low level (technically speaking), or
+- high level, written in natural language. 
+
+Information in its raw state is difficult to use, and only by putting together all the traces left behind by an attacker would be possible to construct _part of_ the history of the attack. When an analyst is capable of producing a credible hypothesis, actionable improvements can be made in the mitigation and defense capabilities of an organization.
+
+An analyst need *actionable intelligence* to produce a credible hypothesis, for this reason an intelligence process must be deployed to extract actionable intelligence from noise. 
+
+From the firs huge set of _data_ collected defined as *noise*, the intelligence process extracts only the elements that are potentially relevant for the analyst. This first subset of information defined *data*, data can be organized in different groups according to defining characteristics. A subset of data with a specific purpose is defined as *intelligence*, intelligence has a specific strategic purpose but is made up of independent pieces. By _connecting the dots_ *actionable intelligence* is obtained, the adjective _actionable_ highlights the fact that the distilled information can be used to understand how a successful attack happened and how to act to avoid a similar attack in the future.
+
+The Intelligence Process is complex and iterative, and it is mostly a human centered activity. 
+
+== Threat Intelligence Process ==
+
+The Threat Intelligence process is made up of five steps: Collection, Processing, Analysis and Production, Dissemination, Planning and Direction. 
+
+By executing these five steps iteratively is possible to improve the next sub-sequences of the process. One approach consists on trying to identify the attackers, it does not mean to perform attribution, but to identify a specific source that uses specific techniques. Observing an attacker using different strategies and approaches can help us to understand its goals. By profiling an attacker is possible to pinpoint its motivations and key tactics.
+
+In general terms the ideal goal of the analyst would be to reconstruct the _attacker's playbook_, or the instruction manual of the attack. A perfect reconstruction of the attacker's playbook would lead to setup the perfect mitigation for such attack, because every step of the attack killchain will be covered by a given defense mechanism.
+
+Similarly to other process the intelligence process expands to different levels of the organization with different goals at each level.
+
+- *Tactical Level*. The goal is to provide technical decision and to provide an understanding of how mitigate threats and enable detection an mitigation actions. At these level actions must be performed quickly and have a direct impact on the security of the system.
+- *Operational Level*. At this level decision taken will provide long term effects, by enabling the formulation of approaches, and the prioritization of activities.
+- *Strategical Level*. At this level decision are taken by the board, and regards budget allocation and are correlated to the business impact of the process. 
+  
+Note that at every level the time frame needed for decision making increases.
+
+== How to make intelligence actionable == 
+
+The first assumption the analyst makes when distilling intelligence is that they are dealing with *budget contrained attackers* or *rational human attackers*; this assumption lead to the sub-sequent assumption that the attacker will find the best possible attack path that maximize its likelihood of success while minimizing the cost of the attack itself. The blue team strategy is to increase the overall cost of the attack and reduce its likelihood of success. 
+
+The cost factor of an attack depends not only on a monetary aspect but also on the expertise, time and resources needed. Another assumption taken is that the attacker acts as a _good engineer_, making sure that each tool built will be as much as possible *reusable* and *scalable*.
+
+These aspects alone can be used to determine the possible actions preferred by the attacker.
+
+=== Intrusion Killchain === 
+
+Like the [[Attack Killchain]] is used to unroll the phases of an attack, the Intrusion Killchain can be used to represent and analyze tentative of intrusions and extract actionable intelligence. 

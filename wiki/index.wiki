@@ -8,9 +8,9 @@ For contact information and for suggestion check the license section or open a n
 
 == Topics ==
 
-- [[Cyber Threat Intelligence (CTI)]]
-- Risk Assessment & Risk Modelling
-- Identity and Access Management
+- [[./cti/index.wiki|Cyber Threat Intelligence (CTI)]]
+- [[./secgov/index.wiki|Risk Assessment & Risk Modelling]]
+- [[./iam/index.wiki|Identity and Access Management]]
 
 == Useful links ==
 
