@@ -1,4 +1,4 @@
 = Root of: Cyber Threat Intelligence =
 
-- [[CTI: Theoretical Elements]]
-- [[Attack Killchain]]
+* [[CTI: Theoretical Elements]]
+* [[Attack Killchain]]
