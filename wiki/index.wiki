@@ -1,0 +1,15 @@
+= StayErk's Cybersecurity Notes = 
+
+== Hello there! == 
+
+Welcome on Stayerk's CyberSecurity notes V3. The notes that were previously updated are being rewritten, updated and corrected. Plus new topics will be added shortly. 
+
+For contact information and for suggestion check the license section or open a new issue on GitHub.
+
+== Useful links ==
+
+== Books I'm currently reading ==
+
+== Support == 
+
+== License ==
