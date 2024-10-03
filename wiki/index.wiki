@@ -8,13 +8,16 @@ For contact information and for suggestion check the license section or open a n
 
 == Topics ==
 
-- [[./cti/index.wiki|Cyber Threat Intelligence (CTI)]]
-- [[./secgov/index.wiki|Risk Assessment & Risk Modelling]]
-- [[./iam/index.wiki|Identity and Access Management]]
+* [[./cti/index.wiki|Cyber Threat Intelligence (CTI)]]
+* [[./secgov/index.wiki|Risk Assessment & Risk Modelling]]
+* [[./iam/index.wiki|Identity and Access Management]]
 
 == Useful links ==
 
 == Books I'm currently reading ==
+
+* [[https://en.wikipedia.org/wiki/12_Rules_for_Life|12_Rules_for_Life]]
+* [[https://www.laterza.it/scheda-libro/?isbn=9788858127360|Guerre di Rete]]
 
 == Support == 
 
