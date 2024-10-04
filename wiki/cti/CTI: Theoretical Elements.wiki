@@ -54,3 +54,49 @@ These aspects alone can be used to determine the possible actions preferred by t
 === Intrusion Killchain === 
 
 Like the [[Attack Killchain]] is used to unroll the phases of an attack, the Intrusion Killchain can be used to represent and analyze tentative of intrusions and extract actionable intelligence. 
+
+The main components of the intrusion killchain are the *indicators*, and can be defined as _any piece of information that objectively describes an intrusion_. Indicators can be classified in three categories: Atomic, Computed and Behavioral.
+
+* *Atomic*. Like an IP address, can't be broken down in smaller parts,
+* *Computed*. Are derived from atomic indicators or from data gathered after an incident, for example the MD5 hash of a malware sample.
+* *Behavioral*. As the name suggest they are composed by a set of indicators put together in a human readable way. They are subjected to qualification and combinatorial logic and they represent how the attacker behaves in the system.
+
+Behavioral indicators are far more important because a collection of behavioral indicators represent a subset of the attacker playbook. In general all indicators are pieces of actionable intelligence, but the impact and the usage of different indicators on the analysis are quite different.
+
+After an indicator has been identified the analyst have to understand which role played in the attack; atomic indicators can be used to put in place easy countermeasures, and they can be mapped on the intrusion killchain to construct behavioral indicators.
+
+The indicators obtained and the intrusion killchain to align defensive capabilities to each specific steps planned by an attacker.
+
+{{./images/theoretical_el_1.png|course of action}}
+
+The actions to counteract an intrusion can be classified in six categories:
+
+* *Detect*
+* *Deny*
+* *Disrupt*
+* *Degrade*
+* *Deceive*
+* *Destroy*
+
+Measure effectiveness will drive defensive strategies overtime if there is a clear and organized plan that explain why each countermeasure is used. The whole process must be maintained over time via a good detection engineering process.
+
+=== Pyramid of Pain ===
+
+Taking into account the assumption of _rational human adversary_ its possible to classify indicators on how costly is for an attacker to change is attack playbook for that indicator to not be present anymore. If an attacker is not willing to invest to change a particular aspect of the attack, the value of the indicator related to that aspect is higher. 
+* *Hash values* that can be used to uniquely reference a specific sample of a malware or file involved in an intrusion, can be easily changed by an attacker with code obfuscation or polymorphism.
+* *IP Addresses*
+* *Domain Names*
+* *Network Artifacts*. Assuming that the analyst is able to observe how the malware communicate with a C2 via a specific pattern, the characteristics that compose the pattern can be used to build rules that hugely impact the attackers' strategy. URI Patterns, C2 information embedded in the network protocols, and distinctive HTTP User-Agent are all characteristics that can be mapped to as Network Artifacts.
+* *Host Artifacts*
+* *Tools*
+* *Tactics, Techniques and Procedures*. TTPs represent the peak of the pyramid, it is the set of actions that the adversary takes to accomplish their mission, from reconnaissance all the way through data exfiltration and at every step in between. 
+
+{{./images/pyramid_of_pain.png|Pyramid of Pain}}
+
+=== Limits ===
+
+Using the intrusion killchain and the Pyramid of Pain as a way to map indicators and organize countermeasures has some limits. The main limit is that the limited number of steps is not enough to increase the level of details and to identify gaps, for this reason complementary models can be used to improve the representation have been developed. 
+
+== Diamond Model == 
+
+
