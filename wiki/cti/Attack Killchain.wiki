@@ -1,1 +1,15 @@
-= Attack Killchain =
+= Attack Killchain: Anatomy of an attack =
+
+Cyber attacks may be of different nature, they can target a single individual or the power grid of an entire nation, they can be politically or economically motivated and can stealthy or sensationally visible (_hacktivism_), but each attack, from the simplest, to the complex can be characterized and described by the attack killchain.
+
+The attack killchain is composed by eight phases.
+
+== Reconnaissance == 
+
+The reconnaissance phase is typically the first phase of an attack, during this phase the attacker studies his target with the objective to collect as many information as possible to find the most effective strategy to be implemented for carrying a successful attack. In this first phase the attacker defines the *attack surface*, that is defined as:
+
+> All the points that an attacker can reach from his current position
+
+Publicly available sources, such as social media, target's website and state datasources are used by the attacker to understand the _internet footprint_ of the target, contacts of the C level staff, the mission and the services offered by the organization building the *target surface*. The target surface can be expanded with information about the employees, data acquired from data breaches and more. 
+
+The 

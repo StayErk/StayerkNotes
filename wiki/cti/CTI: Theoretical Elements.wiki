@@ -135,4 +135,14 @@ Meta Features are not strictly organized. Some meta features that could be used 
 
 === How to use the model ===
 
+The Diamond Model helps filling the gaps of the intrusion killchain, in fact it provide precise indications on what to loo for, and can be used operatively in order to drive the Threat Intelligence process.
 
+Using the Diamond Model to describe a full attack would produce a cluttered visualization of the attack, that by its nature evolves on several steps that can be interleaved or iterative. A better way to use the Diamond Model is to represent the relationships among the features of an attack, while mapping them over the intrusion killchain in order to build an *activity thread*.
+
+An activity thread is a collection of small events within an incident that are mapped with their own diamond; each diamond is then mapped on a specific phase of the intrusion killchain model, and may be related between each other.
+
+This approach introduces another advantage: it is more easy to understand the relationships between different indicators in the same (or different) phase of the attack, improving the communication of the evolution of the attack.
+
+A collection of activity threads is used by the analyst to find commonalities, and to check for gaps in the analysis to improve the overall result of the intelligence process. *Vertical correlation* is used to identify gaps, while *horizontal correlation* is used to find commonalities between threads. When the last diamond of an activity thread is related in someway to the first diamond of another activity thread a _multi-step_ attack has been identified. Multi-step attacks are common in organizations in which, once the attacker as overcome the edge defense, the internal network is not as protected as the external one, allowing the attacker to easily repeat different phases of reconnaissance and exploitation. 
+
+The last step for the analyst is to distill TTPs from the activity threads by selecting few diamond that represent multiple commonalities between several incidents. TTPs can be then used in combination with an *attack graph* to represent all the possible activity threads identifying all the possible targets of the attacker inside the system. The resulting attack graph is finally used to identify mitigation and defense measures to be applied in order to reduce the success probability of the attacker.
