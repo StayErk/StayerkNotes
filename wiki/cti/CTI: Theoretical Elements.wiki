@@ -99,4 +99,40 @@ Using the intrusion killchain and the Pyramid of Pain as a way to map indicators
 
 == Diamond Model == 
 
+The idea on which the Diamond Model is based is that every incident can be represented as a sequence of events; each event represent a specific phase of the attack and generates indicators. When different events are collected and connected in a meaningful way an *activity thread* is created. Grouping different threads may represent activity groups.
+
+=== Event ===
+
+An event is represented by a set of _core features_ and optional _meta features_. Events model the aspect that:
+
+> For every intrusion event there exists an *adversary* taking a step towards an intended goal by using a *capability* over an *infrastructure* against a *victim* to produce a result.
+
+Meta features can be considered as _external resources_ that the attacker may need to fulfill their goal.
+
+The Diamond Model provides a way to map how the features interact together:
+
+{{./images/diamond_model.png|Diamond Model}}
+
+The adversary interaction with the victim is never direct but it always mediated by the capabilities and the infrastructure, that are tightly related. The approach offered by the Diamond Model provides a way to observe data and extract intelligence to identify gaps to improve the ability of extracting useful data to be used in the *planning and direction phase* of the intelligence life cycle. 
+
+Besides the four core feature (attacker, capabilities, infrastructure and victim) the Diamond Model allows to describe additional features useful to characterize the attack. These optional features, called _meta features_ are not organized in any way and can be grouped in clusters.
+
+===== Capabilities =====
+
+The capabilities are all the tools and techniques that the adversary can use against the victim. The full capabilities capacity is the set of all the vulnerabilities and exposures that the attacker can use regardless of the victim; while the *arsenal* is the complete set of tools that adversary owns.
+
+===== Infrastructure =====
+
+The capabilities, in order to be used, must be supported by an infrastructure. This feature describes the physical and logical communication structure used by the adversary to deliver an attack. The infrastructure can be directly controlled, provided by an intermediary or can be a public infrastructure.
+
+===== Victim =====
+
+It's possible to model different entities as victim depending on the level of details that the analyst want to achieve. This feature could represent the whole organization or a specific host in a given subnet. Vulnerabilities used to attack the victim are represented as sub-features of the victim itself.
+
+===== Meta Features =====
+
+Meta Features are not strictly organized. Some meta features that could be used are *timestamps*, the *phase* of the killchain in which the event belong, and the *results* of the operation performed by the attacker. Software used to model Cyber Threat Intelligence information automatically map and organize these features on top of the model and are strictly dependent on the platform used.
+
+=== How to use the model ===
+
 
