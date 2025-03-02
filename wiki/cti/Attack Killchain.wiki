@@ -12,4 +12,22 @@ The reconnaissance phase is typically the first phase of an attack, during this 
 
 Publicly available sources, such as social media, target's website and state datasources are used by the attacker to understand the _internet footprint_ of the target, contacts of the C level staff, the mission and the services offered by the organization building the *target surface*. The target surface can be expanded with information about the employees, data acquired from data breaches and more. 
 
-The 
+Often the reconnaissance phase is underrated by the defender, even if the defensive options are limited, it is possible to reduce the level of publicly available information and try to control them. Hiding information will not make the system more secure, but will increase the cost of the attack.
+
+== Weaponization ==
+
+In this phase the attacker transforms the plan in something more operational, acquiring knowledge and tools to implement the attack. This phase is technically challenging and its cost depends on the skills necessary for the implementation of the exploit that the attacker wants to use. Usually this phase is outsourced.
+
+=== Software Vulnerabilities ===
+
+From the Cambridge English dictionary, _vulnerability_:
+
+> The quality of being vulnerable (able to be easily hurt, influenced or attacked)
+
+Adversaries may use several techniques for accessing an IT system, ranging from social engineering or software vulnerabilities on edge devices ([[https://media.defense.gov/2023/Aug/03/2003273618/-1/-1/0/JOINT-CSA-2022-TOP-ROUTINELY-EXPLOITED-VULNERABILITIES.PDF|joint CSA top routinely exploited vulnerabilities]]), for this reason is fundamental to understand what is the cause of vulnerabilities, how they are classified and how to mitigate issues caused by them.
+
+In general the final artifact of software development will: implement a subset of the requirements, introduce side-effects (or undesired functionalities) and bugs. The last two aspects can lead to potential vulnerabilities. 
+
+> A security flaw, glitch, or weakness found in software code that could be exploited by an attacker. - NISTIR 8011 Vol. 4
+
+

@@ -3,7 +3,7 @@
 <head>
 <link rel="Stylesheet" type="text/css" href="../style.css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<title>CTI: Theoretical Elements</title>
+<title>Theoretical Elements</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -285,6 +285,30 @@ Meta Features are not strictly organized. Some meta features that could be used 
 </p>
 
 <div id="CTI: Theoretical Elements-Diamond Model-How to use the model"><h3 id="How to use the model" class="header"><a href="#CTI: Theoretical Elements-Diamond Model-How to use the model">How to use the model</a></h3></div>
+
+<p>
+The Diamond Model helps filling the gaps of the intrusion killchain, in fact it provide precise indications on what to loo for, and can be used operatively in order to drive the Threat Intelligence process.
+</p>
+
+<p>
+Using the Diamond Model to describe a full attack would produce a cluttered visualization of the attack, that by its nature evolves on several steps that can be interleaved or iterative. A better way to use the Diamond Model is to represent the relationships among the features of an attack, while mapping them over the intrusion killchain in order to build an <span id="CTI: Theoretical Elements-Diamond Model-How to use the model-activity thread"></span><strong id="activity thread">activity thread</strong>.
+</p>
+
+<p>
+An activity thread is a collection of small events within an incident that are mapped with their own diamond; each diamond is then mapped on a specific phase of the intrusion killchain model, and may be related between each other.
+</p>
+
+<p>
+This approach introduces another advantage: it is more easy to understand the relationships between different indicators in the same (or different) phase of the attack, improving the communication of the evolution of the attack.
+</p>
+
+<p>
+A collection of activity threads is used by the analyst to find commonalities, and to check for gaps in the analysis to improve the overall result of the intelligence process. <span id="CTI: Theoretical Elements-Diamond Model-How to use the model-Vertical correlation"></span><strong id="Vertical correlation">Vertical correlation</strong> is used to identify gaps, while <span id="CTI: Theoretical Elements-Diamond Model-How to use the model-horizontal correlation"></span><strong id="horizontal correlation">horizontal correlation</strong> is used to find commonalities between threads. When the last diamond of an activity thread is related in someway to the first diamond of another activity thread a <em>multi-step</em> attack has been identified. Multi-step attacks are common in organizations in which, once the attacker as overcome the edge defense, the internal network is not as protected as the external one, allowing the attacker to easily repeat different phases of reconnaissance and exploitation. 
+</p>
+
+<p>
+The last step for the analyst is to distill TTPs from the activity threads by selecting few diamond that represent multiple commonalities between several incidents. TTPs can be then used in combination with an <span id="CTI: Theoretical Elements-Diamond Model-How to use the model-attack graph"></span><strong id="attack graph">attack graph</strong> to represent all the possible activity threads identifying all the possible targets of the attacker inside the system. The resulting attack graph is finally used to identify mitigation and defense measures to be applied in order to reduce the success probability of the attacker.
+</p>
 
 </body>
 </html>

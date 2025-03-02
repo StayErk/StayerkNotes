@@ -1,24 +1,35 @@
-= StayErk's Cybersecurity Notes = 
+= ercolino.me = 
 
 == Hello there! == 
 
-Welcome on Stayerk's CyberSecurity notes V3. The notes that were previously updated are being rewritten, updated and corrected. Plus new topics will be added shortly. 
+I am Andrea Ercolino, currently working as Digital Security Specialist in Identity and Access Management. I am passionate about Cybersecurity and Music. I use this space to publish my researches and notes. I advocate for a _simpler_ Internet and a responsible usage of technology.
 
-For contact information and for suggestion check the license section or open a new issue on GitHub.
+== Cybersecurity Notes  ==
 
-== Topics ==
+Previously published as "_Stayerk's CyberSecurity notes_", notes I took during my studies are being rewritten, updated and corrected.
+
+=== Topics ===
 
 * [[./cti/index.wiki|Cyber Threat Intelligence (CTI)]]
 * [[./secgov/index.wiki|Risk Assessment & Risk Modelling]]
 * [[./iam/index.wiki|Identity and Access Management]]
+* [[AWS SO]]
+* [[ISO 20022]]
 
-== Useful links ==
+=== Useful links ===
 
-== Books I'm currently reading ==
+* [[https://www.ercolino.me/old/index.html|Old Version]]
 
-* [[https://en.wikipedia.org/wiki/12_Rules_for_Life|12 Rules for Life]]
-* [[https://www.laterza.it/scheda-libro/?isbn=9788858127360|Guerre di Rete]]
+== Research ==
 
-== Support == 
+* [[IPv6 Covert Channels]] 
 
-== License ==
+== Books in the Library ==
+
+== Evergreens == 
+
+* [[https://dl.acm.org/doi/pdf/10.1145/42411.42412|Stalking the Wily Hacker]]
+
+== Contact ==
+
+Contact me at: andrea[at]ercolino.me *Use PGP*, my public key is available at: https://keys.openpgp.org/vks/v1/by-fingerprint/BAF98756F31CD636D51FEF7DDA8767D3995B0FE2

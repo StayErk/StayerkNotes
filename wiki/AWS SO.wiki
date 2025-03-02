@@ -1,0 +1,66 @@
+= AWS SO = 
+
+Useful links:
+
+- https://us-east-1.student.classrooms.aws.training/class/teDwdprHchUfHvQK7DKAtQ
+- https://bolecodex.notion.site/Security-Engineering-on-AWS-8f63e2196dd24be9a97b37a56d319404
+
+== Module 1 Security Overview ==
+
+*Keypoints*:
+
+- Understand the responsibility model of AWS
+- Explain threat modeling in AWS
+- Explain security in the AWS Cloud
+
+Each organization must implement security principles, their implementation should be prioritized taking into account three macro-sections:
+
+1. *Infrastructure security*. Firewalls, intrusion detection and prevention systems, secure data storage.
+2. *Operations security*. Access control, authentication and authorization.
+3. *Applications security*. Vulnerability scanning, penetration testing and code review.
+
+While security principles to implement are the same if the infrastructure is in cloud or on-premises, the cloud introduce benefits and some inherit challenges.
+
+* *Automation*
+* *Visibility*
+* *Auditability*
+* *Agility*
+* *Controllability*
+
+are some of the pillar of the [[https://docs.aws.amazon.com/wellarchitected/latest/framework/sec-design.html|AWS Well-Architected Framework security pillars]].
+
+The responsibility model of AWS varies on the service used by the customer. In general terms, AWS applies a shared responsibility model, the level of responsibility of the customer varies depending on the level of customization of the service. For example when using Amazon EC2, the customer owns the responsibility of the operating system, and network security configurations, implementing client-side or server-side encryption; while AWS is responsible for the compute, storage, database and networking.
+
+In a more managed service like Amazon RDS, the customer is responsible only of the firewall configuration, client-side data encryption, network traffic protection and customer data, while AWS takes care of all the underlying configuration and maintenance.
+
+A fully managed service, like Amazon S3, KMS and DynamoDB is not customizable but offer a ready to use solution completely managed by AWS in which the customer is only responsible for customer data and implementing client side encryption.
+
+Implementing security and governance in AWS cloud could be challenging, for this reason using a managed service organization (MSO) or a managed service partner (MSP) is an approach to implementing security and governance. An MSO (MSP) is responsible of establishing repeatable processes and templates for deploying applications to AWS maintaining organizational control over the deployments. Their principal role is to create guardrails for security, data protection and disaster recovery of the company.
+
+Ans MSO is responsible of:
+
+* *Account provisioning*. Creating the initial account, connecting it to the appropriate billing account and configuring initial basic security functionalities.
+* *Oversight*. The centralized account provisioning enables the MSO to monitor applications as they are deployed and managed. The oversight is implemented by connecting the applications VPC to the MSO's VPC.
+* *Amazon VPC configuration*. In order to maintain a tighter control over the application VPCs the MSO retain control over VPC changes.
+* *IAM configuration*. Creating user groups and assignment of rights.
+* *Templates*. Creation and maintenance of pre-approced CloudFormation templates. The usage of templates enables workload owners to inherit the security implementation of the pre-approved template.
+* *AMI*. Creation and maintenance of a library of common and approved Machine Images available for the whole organization.
+* auditing of workload owners for security of shared workload.
+* monitoring.
+* connectivity.
+* authentication.
+
+=== Security Engineering on AWS ===
+
+
+
+== Module 2 Access Authorization on AWS ==
+
+== Module 3 Account Management and Provisioning ==
+
+== Module 4 Managing Keys and Secrets on AWS ==
+
+== Module 5 Data Security ==
+
+=== LAB 4 ===
+

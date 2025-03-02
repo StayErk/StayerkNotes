@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>ISO 20022</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="ISO 20022"><h1 id="ISO 20022" class="header"><a href="#ISO 20022">ISO 20022</a></h1></div>
+
+<p>
+ISO 20022 is an international standard for electronic data interchange between financial institutions. It provides a common framework for the development of financial message standards, enabling efficient and standardized communication across the financial industry. Here’s a high-level overview:
+</p>
+
+<div id="ISO 20022-Key Features"><h2 id="Key Features" class="header"><a href="#ISO 20022-Key Features">Key Features</a></h2></div>
+<ol>
+<li>
+<span id="ISO 20022-Key Features-Universal Messaging Standard"></span><strong id="Universal Messaging Standard">Universal Messaging Standard</strong>:
+
+<ul>
+<li>
+ISO 20022 is designed to be a universal messaging standard, covering a wide range of financial services, including payments, securities, trade services, and foreign exchange.
+
+</ul>
+<li>
+<span id="ISO 20022-Key Features-Rich Data Format"></span><strong id="Rich Data Format">Rich Data Format</strong>:
+
+<ul>
+<li>
+Uses XML (eXtensible Markup Language) for message syntax, allowing for detailed and structured data representation.
+
+<li>
+Supports richer and more granular data compared to older messaging standards like SWIFT MT.
+
+</ul>
+<li>
+<span id="ISO 20022-Key Features-Flexibility and Interoperability"></span><strong id="Flexibility and Interoperability">Flexibility and Interoperability</strong>:
+
+<ul>
+<li>
+Flexible enough to cater to diverse financial systems and regulatory requirements.
+
+<li>
+Promotes interoperability between different financial institutions and markets worldwide.
+
+</ul>
+<li>
+<span id="ISO 20022-Key Features-Modular Design"></span><strong id="Modular Design">Modular Design</strong>:
+
+<ul>
+<li>
+Messages are built using reusable business components and data dictionaries, which ensures consistency and reduces redundancy.
+
+</ul>
+<li>
+<span id="ISO 20022-Key Features-Backward Compatibility"></span><strong id="Backward Compatibility">Backward Compatibility</strong>:
+
+<ul>
+<li>
+Includes provisions for mapping messages to older standards like MT messages, easing the transition for institutions.
+
+</ul>
+</ol>
+<div id="ISO 20022-Benefits"><h2 id="Benefits" class="header"><a href="#ISO 20022-Benefits">Benefits</a></h2></div>
+<ul>
+<li>
+<span id="ISO 20022-Benefits-Improved Efficiency"></span><strong id="Improved Efficiency">Improved Efficiency</strong>: Standardized messaging reduces errors and manual intervention.
+
+<li>
+<span id="ISO 20022-Benefits-Enhanced Data Quality"></span><strong id="Enhanced Data Quality">Enhanced Data Quality</strong>: Supports better reporting, compliance, and risk management with more detailed information.
+
+<li>
+<span id="ISO 20022-Benefits-Global Adoption"></span><strong id="Global Adoption">Global Adoption</strong>: Facilitates cross-border transactions by providing a common language for financial communications.
+
+<li>
+<span id="ISO 20022-Benefits-Regulatory Alignment"></span><strong id="Regulatory Alignment">Regulatory Alignment</strong>: Meets increasing regulatory demands for transparency and traceability in financial transactions.
+
+</ul>
+<div id="ISO 20022-Applications"><h2 id="Applications" class="header"><a href="#ISO 20022-Applications">Applications</a></h2></div>
+<p>
+ISO 20022 is primarily used in:
+</p>
+<ul>
+<li>
+Payments (e.g., credit transfers, direct debits, real-time payments)
+
+<li>
+Securities settlement and clearing
+
+<li>
+Foreign exchange and trade finance
+
+<li>
+Card payments
+
+</ul>
+<div id="ISO 20022-Adoption"><h2 id="Adoption" class="header"><a href="#ISO 20022-Adoption">Adoption</a></h2></div>
+<p>
+ISO 20022 is increasingly becoming the global standard for financial messaging. Key milestones include:
+</p>
+<ul>
+<li>
+<span id="ISO 20022-Adoption-SWIFT Migration"></span><strong id="SWIFT Migration">SWIFT Migration</strong>: SWIFT is transitioning its cross-border payments messaging from MT to ISO 20022.
+
+<li>
+<span id="ISO 20022-Adoption-Central Banks and RTGS Systems"></span><strong id="Central Banks and RTGS Systems">Central Banks and RTGS Systems</strong>: Many central banks and real-time gross settlement (RTGS) systems have adopted ISO 20022 for domestic and international payments.
+
+</ul>
+<div id="ISO 20022-Challenges"><h2 id="Challenges" class="header"><a href="#ISO 20022-Challenges">Challenges</a></h2></div>
+<ul>
+<li>
+<span id="ISO 20022-Challenges-Implementation Costs"></span><strong id="Implementation Costs">Implementation Costs</strong>: Transitioning to ISO 20022 requires significant investment in technology and staff training.
+
+<li>
+<span id="ISO 20022-Challenges-Complexity"></span><strong id="Complexity">Complexity</strong>: Rich data capabilities can introduce complexity in designing and maintaining systems.
+
+<li>
+<span id="ISO 20022-Challenges-Migration Coordination"></span><strong id="Migration Coordination">Migration Coordination</strong>: Global synchronization is necessary to ensure smooth adoption across institutions.
+
+</ul>
+<p>
+ISO 20022 is a transformative initiative in financial messaging, enabling a more interconnected and efficient global financial ecosystem.
+</p>
+
+<div id="Mapping of ISO 20022 over SWIFT"><h1 id="Mapping of ISO 20022 over SWIFT" class="header"><a href="#Mapping of ISO 20022 over SWIFT">Mapping of ISO 20022 over SWIFT</a></h1></div>
+
+<p>
+The mapping of ISO 20022 specifications to SWIFT MT (Message Type) standards is critical for institutions transitioning from the older MT standard to the more modern ISO 20022 standard. Below is a high-level mapping of key message categories in ISO 20022 and their corresponding SWIFT MT messages:
+</p>
+
+<div id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)"><h2 id="Payments (PACS, PAIN, CAMT)" class="header"><a href="#Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)">Payments (PACS, PAIN, CAMT)</a></h2></div>
+<p>
+ISO 20022 uses three main categories for payment messages: <span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PACS"></span><strong id="PACS">PACS</strong>, <span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PAIN"></span><strong id="PAIN">PAIN</strong>, and <span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-CAMT"></span><strong id="CAMT">CAMT</strong>.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-ISO 20022 Message"></span><strong id="ISO 20022 Message">ISO 20022 Message</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-Description"></span><strong id="Description">Description</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-Equivalent SWIFT MT"></span><strong id="Equivalent SWIFT MT">Equivalent SWIFT MT</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PACS.008"></span><strong id="PACS.008">PACS.008</strong>
+</td>
+<td>
+FI-to-FI Customer Credit Transfer
+</td>
+<td>
+MT 103
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PACS.009"></span><strong id="PACS.009">PACS.009</strong>
+</td>
+<td>
+Financial Institution Credit Transfer
+</td>
+<td>
+MT 202/MT 205
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PACS.002"></span><strong id="PACS.002">PACS.002</strong>
+</td>
+<td>
+Payment Status Report
+</td>
+<td>
+MT 199/MT 299
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PACS.004"></span><strong id="PACS.004">PACS.004</strong>
+</td>
+<td>
+Payment Return
+</td>
+<td>
+MT 192/MT 202 Return
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PAIN.001"></span><strong id="PAIN.001">PAIN.001</strong>
+</td>
+<td>
+Customer Credit Transfer Initiation
+</td>
+<td>
+N/A (Customer-side message)
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-PAIN.002"></span><strong id="PAIN.002">PAIN.002</strong>
+</td>
+<td>
+Customer Payment Status Report
+</td>
+<td>
+N/A
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-CAMT.053"></span><strong id="CAMT.053">CAMT.053</strong>
+</td>
+<td>
+Bank Statement
+</td>
+<td>
+MT 940/MT 950
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-CAMT.054"></span><strong id="CAMT.054">CAMT.054</strong>
+</td>
+<td>
+Debit/Credit Notification
+</td>
+<td>
+MT 942
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Payments (PACS, PAIN, CAMT)-CAMT.056"></span><strong id="CAMT.056">CAMT.056</strong>
+</td>
+<td>
+Payment Cancellation Request
+</td>
+<td>
+MT 192/MT 292
+</td>
+</tr>
+</tbody>
+</table>
+
+<div id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)"><h2 id="Securities (SETT, TRAD, SEEV, ACMT, COLR)" class="header"><a href="#Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)">Securities (SETT, TRAD, SEEV, ACMT, COLR)</a></h2></div>
+<p>
+ISO 20022 has a rich set of messages for securities and trade services. Below is a basic mapping.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-ISO 20022 Message"></span><strong id="ISO 20022 Message">ISO 20022 Message</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-Description"></span><strong id="Description">Description</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-Equivalent SWIFT MT"></span><strong id="Equivalent SWIFT MT">Equivalent SWIFT MT</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-SEMT.002"></span><strong id="SEMT.002">SEMT.002</strong>
+</td>
+<td>
+Statement of Holdings
+</td>
+<td>
+MT 535
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-SEMT.004"></span><strong id="SEMT.004">SEMT.004</strong>
+</td>
+<td>
+Statement of Transactions
+</td>
+<td>
+MT 536
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-SEMT.005"></span><strong id="SEMT.005">SEMT.005</strong>
+</td>
+<td>
+Statement of Pending Transactions
+</td>
+<td>
+MT 537
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-SETR.001"></span><strong id="SETR.001">SETR.001</strong>
+</td>
+<td>
+Trade Notification
+</td>
+<td>
+MT 515/MT 518
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-SETR.008"></span><strong id="SETR.008">SETR.008</strong>
+</td>
+<td>
+Securities Settlement Instruction
+</td>
+<td>
+MT 540/MT 541/MT 543
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Securities (SETT, TRAD, SEEV, ACMT, COLR)-COLL.001"></span><strong id="COLL.001">COLL.001</strong>
+</td>
+<td>
+Collateral Management Instruction
+</td>
+<td>
+MT 540/MT 542
+</td>
+</tr>
+</tbody>
+</table>
+
+<div id="Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)"><h2 id="Foreign Exchange (FXTR)" class="header"><a href="#Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)">Foreign Exchange (FXTR)</a></h2></div>
+<p>
+ISO 20022 supports foreign exchange (FX) transactions, though mappings are less common for older MT messages.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)-ISO 20022 Message"></span><strong id="ISO 20022 Message">ISO 20022 Message</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)-Description"></span><strong id="Description">Description</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)-Equivalent SWIFT MT"></span><strong id="Equivalent SWIFT MT">Equivalent SWIFT MT</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)-FXTR.001"></span><strong id="FXTR.001">FXTR.001</strong>
+</td>
+<td>
+Foreign Exchange Trade Notification
+</td>
+<td>
+MT 300
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Foreign Exchange (FXTR)-FXTR.012"></span><strong id="FXTR.012">FXTR.012</strong>
+</td>
+<td>
+Foreign Exchange Position Maintenance
+</td>
+<td>
+MT 304
+</td>
+</tr>
+</tbody>
+</table>
+
+<div id="Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)"><h2 id="Trade Services (TSMT)" class="header"><a href="#Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)">Trade Services (TSMT)</a></h2></div>
+<p>
+ISO 20022 handles trade finance and guarantees under the TSMT message set.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)-ISO 20022 Message"></span><strong id="ISO 20022 Message">ISO 20022 Message</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)-Description"></span><strong id="Description">Description</strong>
+</th>
+<th>
+<span id="Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)-Equivalent SWIFT MT"></span><strong id="Equivalent SWIFT MT">Equivalent SWIFT MT</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)-TSMT.001"></span><strong id="TSMT.001">TSMT.001</strong>
+</td>
+<td>
+Trade Initiation Message
+</td>
+<td>
+MT 798 (customized messages)
+</td>
+</tr>
+<tr>
+<td>
+<span id="Mapping of ISO 20022 over SWIFT-Trade Services (TSMT)-TSMT.019"></span><strong id="TSMT.019">TSMT.019</strong>
+</td>
+<td>
+Amendment Request
+</td>
+<td>
+MT 707
+</td>
+</tr>
+</tbody>
+</table>
+
+<div id="Mapping of ISO 20022 over SWIFT-General Considerations"><h2 id="General Considerations" class="header"><a href="#Mapping of ISO 20022 over SWIFT-General Considerations">General Considerations</a></h2></div>
+<ol>
+<li>
+<span id="Mapping of ISO 20022 over SWIFT-General Considerations-Flexibility"></span><strong id="Flexibility">Flexibility</strong>: ISO 20022 messages are modular and rich in data fields, offering more flexibility compared to MT messages.
+
+<li>
+<span id="Mapping of ISO 20022 over SWIFT-General Considerations-Granularity"></span><strong id="Granularity">Granularity</strong>: Some ISO 20022 messages cover use cases not explicitly addressed in SWIFT MT formats.
+
+<li>
+<span id="Mapping of ISO 20022 over SWIFT-General Considerations-Transition Tools"></span><strong id="Transition Tools">Transition Tools</strong>: SWIFT offers tools like MyStandards and translation tools to facilitate mapping and conversion between MT and ISO 20022 formats.
+
+<li>
+<span id="Mapping of ISO 20022 over SWIFT-General Considerations-Coexistence Period"></span><strong id="Coexistence Period">Coexistence Period</strong>: During the SWIFT migration to ISO 20022, both message formats will coexist for a period, requiring mappings to ensure interoperability.
+
+</ol>
+<p>
+This mapping serves as a reference and varies by specific implementation and use case. Some institutions and market infrastructures might extend or customize these mappings for their requirements.
+</p>
+
+</body>
+</html>
