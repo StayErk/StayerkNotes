@@ -1,0 +1,26 @@
+= A tale of nefarious usage: IPv6 based Covert Channels =
+
+In this page you may find information about the talk "A tale of nefarious usage: IPv6 based Covert Channel" which I have presented at the [[https://www.elbsides.eu/2025/|Elbsides 2025]]. Elbsides is an amazing, community driven, Cybersecurity conference, it was an honor for me to be part of the team of fantastic speakers with my work. If you like to have a look at the presentation, at the code or at the speech see the links below.
+
+== Abstract ==
+
+Like steganographic techniques that embed messages in unstructured data, network-based covert channels exploit communication protocols to conceal data. By hijacking legitimate traffic, these channels provide a stealthy means of communication and data exfiltration.
+
+The growing adoption of IPv6, driven by major ISPs and tech companies, introduces new security risks. One such risk is the ease of implementing covert channels within IPv6 communications, which remain undetected by common open-source IDS tools like Suricata, Zeek, and Snort.
+
+Using high-level programming languages like Python and open-source libraries such as Scapy, it is possible to inject covert data into IPv6 packets without disrupting application-level communication. This technique applies to on-premises, hybrid-cloud, and commercial cloud environments, including AWS, Azure, and Vultr, leveraging an IPv6 network stack.
+
+Six covert channels have been implemented and tested in virtual and cloud environments to evaluate their feasibility. To prevent interference with legitimate traffic, packets are cleaned before delivery, ensuring injected data is removed and restoring packets to their original form.
+
+Various IPv6 fields and extension headers can carry covert messages without affecting overt communication. The Flow Label and Traffic Class fields, as well as the Authentication, Routing, Destination Options, and Fragment headers, can be exploited. The bandwidth of a covert channel depends on the bits that can be safely manipulated. For instance, the Flow Label field allows a bandwidth of 20 bits per packet, offering an efficient and hard-to-detect method when high bandwidth is not required. In contrast, the Authentication Header, introduced in this work, can carry 32 bits per packet while maintaining stealth. The Destination Options Header, though rarely used, can transport up to 256 bits per packet.
+
+Ensuring successful message delivery while preserving communication integrity requires a communication strategy at both ends of the covert channel. Three strategies have been implemented: naive, marked, and reliable, each offering increasing levels of complexity, reliability, and efficiency.
+
+The naive strategy simply transmits n covert-data packets followed by y legitimate packets, with both sender and receiver preconfigured accordingly. However, it lacks reliability in cases of packet loss or reordering. The marked strategy improves upon this by employing cryptographic marking to ensure correct packet identification and reassembly. The reliable strategy applies when TCP is used at Layer 6, allowing the sender to retransmit covert bits associated with missing TCP sequence numbers.
+
+Beyond academic research, the proposed tool enables man-in-the-middle data exfiltration, allowing a compromised router to participate in an attack chain. Covert channel performance has been evaluated in terms of bandwidth and message loss rates. Their effectiveness has been tested against Suricata, Snort, and Zeek to assess whether standard detection rules trigger alerts when scanning IPv6 traffic modified to carry covert data.
+
+== Material ==
+
+	- [[./static/elbsides2025.pdf|Presentation]]
+	- [[https://github.com/StayErk/IPv6-Covert-Channels|IPv6 Covert Channels]]

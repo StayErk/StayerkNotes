@@ -22,7 +22,7 @@ Previously published as "_Stayerk's CyberSecurity notes_", notes I took during m
 
 == Research ==
 
-* [[IPv6 Covert Channels]] 
+* [[./ipv6cc/IPv6 Covert Channels]] 
 
 == Books in the Library ==
 
